@@ -108,9 +108,9 @@ DEBUGBREAK_STATIC_INLINE int debugbreak_is_debugger_present(void)
 // #if (defined(_WIN32_WINNT) && (_WIN32_WINNT >= 0x0400)) || (defined(_WIN32_WINDOWS) && (_WIN32_WINDOWS > 0x0400))
 
 DEBUGBREAK_EXTERN_C
-extern __declspec(dllimport) void __stdcall DebugBreak(void);
+__declspec(dllimport) void __stdcall DebugBreak(void);
 DEBUGBREAK_EXTERN_C
-extern __declspec(dllimport)  int __stdcall IsDebuggerPresent(void);
+__declspec(dllimport)  int __stdcall IsDebuggerPresent(void);
 
 #endif
 
